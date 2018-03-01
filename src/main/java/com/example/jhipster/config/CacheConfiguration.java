@@ -44,6 +44,12 @@ public class CacheConfiguration {
             cm.createCache(com.example.jhipster.domain.PersistentToken.class.getName(), jcacheConfiguration);
             cm.createCache(com.example.jhipster.domain.User.class.getName() + ".persistentTokens", jcacheConfiguration);
             cm.createCache(com.example.jhipster.domain.SocialUserConnection.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.jhipster.domain.RfbLocation.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.jhipster.domain.RfbLocation.class.getName() + ".rfbEvents", jcacheConfiguration);
+            cm.createCache(com.example.jhipster.domain.RfbEvent.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.jhipster.domain.RfbEvent.class.getName() + ".rfbEventAttendances", jcacheConfiguration);
+            cm.createCache(com.example.jhipster.domain.RfbEventAttendance.class.getName(), jcacheConfiguration);
+            cm.createCache(com.example.jhipster.domain.RfbUser.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
